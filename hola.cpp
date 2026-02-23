@@ -1,27 +1,29 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int main() {
-    std::string name;
+    string name;
     int age;
-    std::string city;
+    string city;
 
-    std::cout << "Hello! Welcome!" << std::endl;
-    std::cout << "What is your name? ";
-    std::getline(std::cin, name);
+    cout << "Hello! Welcome!" << endl;
+    cout << "What is your name? ";
+    getline(cin, name);
 
-    std::cout << "How old are you? ";
-    std::cin >> age;
-    std::cin.ignore(); // Clear the newline from input buffer
+    cout << "How old are you? ";
+    cin >> age;
+    cin.ignore();
 
-    std::cout << "What city are you from? ";
-    std::getline(std::cin, city);
+    cout << "What city are you from? ";
+    getline(cin, city);
 
-    std::cout << "\n--- Greeting Summary ---" << std::endl;
-    std::cout << "Hello " << name << "!" << std::endl;
-    std::cout << "You are " << age << " years old." << std::endl;
-    std::cout << "You are from " << city << "." << std::endl;
-    std::cout << "Nice to meet you!" << std::endl;
+    cout << "\n--- Greeting Summary ---" << endl;
+    cout << "Hello " << name << "!" << endl;
+    cout << "You are " << age << " years old." << endl;
+    cout << "You are from " << city << "." << endl;
+    cout << "Nice to meet you!" << endl;
 
     return 0;
 }
